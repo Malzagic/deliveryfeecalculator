@@ -1,0 +1,10 @@
+.titleContainer {
+  color: var(--text-primary);
+  background-color: var(--secondary-background);
+  text-align: center;
+  padding: 1rem;
+}
+
+.subTitle {
+  color: var(--secondary-text);
+}

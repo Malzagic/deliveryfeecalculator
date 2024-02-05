@@ -1,0 +1,10 @@
+.modalTitle {
+  font-weight: normal;
+}
+
+.modalSubtitle {
+  font-weight: bold;
+  border: 1px solid var(--card-background);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}

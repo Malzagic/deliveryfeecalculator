@@ -1,0 +1,12 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background);
+  padding: 1rem;
+}
+
+.footerContainer p {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}

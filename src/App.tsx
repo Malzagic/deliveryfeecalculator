@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/UI-UX/navigation/Navigation";
+import Card from "./components/UI-UX/card/Card";
+import CardOrder from "./components/card-order/CardOrder";
+import Footer from "./components/UI-UX/footer/Footer";
+import Wrapper from "./components/UI-UX/containers/Wrapper";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Navigation />
+      <Card>
+        <CardOrder />
+      </Card>
+      <Footer />
+    </Wrapper>
   );
 }
-
-export default App;

@@ -1,0 +1,51 @@
+.inputBox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inputField {
+  color: var(--text-primary);
+  padding: 0.25rem 0.5rem;
+  background-color: inherit;
+  border: 1px solid var(--actions-color);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.inputField::placeholder {
+  font-size: 0.725rem;
+  padding-left: 5px;
+  opacity: 0.7;
+}
+
+.inputField:hover {
+  border: 1px solid var(--actions-hover-color);
+  border-radius: 0.5rem;
+}
+
+.inputField:focus:hover {
+  outline: var(--actions-hover-color);
+  box-shadow: 0px 0px 8px var(--actions-hover-color);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--text-primary);
+  box-shadow: inset 0 0 20px 20px var(--main-background);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: var(--text-primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+}
